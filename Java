@@ -1,0 +1,19 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		double a = 0;
+		int k = 0;
+		int i;
+		int j;
+		for (i=0;i < 10;i++) {
+			long start = System.currentTimeMillis();
+			for (j=0;j < 1000000;j++) {
+				k++;
+			}
+			long end = System.currentTimeMillis();
+			a += end - start;
+		}
+		System.out.println("Time:" + a/10);
+	}
+}
